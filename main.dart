@@ -11,4 +11,24 @@ void main() {
   String name2 = 'gyahury';
   name = 'rudgns';
 
+  // 다이나믹 타입
+  var name3;
+  name3 = 'gyahury';
+  name3 = 11;
+  name3 = true;
+
+  dynamic name4;
+  name4 = 'gyahury';
+  name4 = 11;
+  name4 = true;
+
+  // String임을 확인하고 나면 그 타입 관련 메서드 사용 가능
+  if(name4 is String){
+    
+  }
+  
+  if(name4 is int){
+    
+  }
+  
 }
