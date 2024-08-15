@@ -2,7 +2,8 @@ void main() {
   // 다트 언어에서는 세미콜론 중요
   print('hello world');
   
-  // 1. 변수만드는 두가지 방법 
+  // 1. 변수
+  // 두가지 선언 방법 
   // 관습으로 함수나 메소드 내부에 지역변수 선언할 때 var 사용
   var name = 'gyahury';
   name = 'rudgns';
@@ -44,4 +45,16 @@ void main() {
   }
   // 위와 같은 표현
   gyahury?.isNotEmpty;
+
+  // final 상수
+  final name5 = 'gyahury';
+  // name5 = 'gyahury'; 수정 불가
+  final String name6 = 'gyahury';
+  
+  // late 수식어 -> 초기 데이터 없이 변수 선언 가능
+  late final String name7;
+  // api 호출하고 나서 넣어줄 수 있음
+  // 값을 넣기 전에는 print도 할 수 없음
+  name7 = 'gyahury';
+  // name7 = 'ddd'; 수정 불가
 }
