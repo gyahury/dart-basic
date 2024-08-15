@@ -30,5 +30,18 @@ void main() {
   if(name4 is int){
     
   }
-  
+
+  // null safety
+  // null을 참조하는 문제에 대한 처리
+  // 물음표를 통해 널값일 수도 있음을 알림 
+  String? gyahury = 'gyahury';
+  gyahury = null;
+
+  // gyahury.isEmpty 그냥 이렇게 적으면 null일 수 있어 문제가 되지만
+  // 널 체크를 하게되면 사용 가능하다.
+  if (gyahury != null){
+    gyahury.isEmpty;
+  }
+  // 위와 같은 표현
+  gyahury?.isNotEmpty;
 }
