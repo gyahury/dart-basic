@@ -57,4 +57,12 @@ void main() {
   // 값을 넣기 전에는 print도 할 수 없음
   name7 = 'gyahury';
   // name7 = 'ddd'; 수정 불가
+
+  // const
+  // dart의 const는 compile-time constant를 만듬
+  // 런타임에 결정되는 어떤 값이 아니라
+  // 컴파일 시점에서 이미 알려진 상수다. 상수값이 정해져야 한다.
+  // final은 런타임에 결정될 수 있는 상수다.(DateTime.now()와 같이 런타임에 값이 결정될 수 있음)
+  // const는 앱에 담긴 코드를 앱스토어에 보내기 전에 정해진 값
+  const max_height = 200;
 }
