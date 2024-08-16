@@ -65,4 +65,14 @@ void main() {
   // final은 런타임에 결정될 수 있는 상수다.(DateTime.now()와 같이 런타임에 값이 결정될 수 있음)
   // const는 앱에 담긴 코드를 앱스토어에 보내기 전에 정해진 값
   const max_height = 200;
+
+  // 자료형
+  // dart의 자료형은 전부 object이다.
+  Stirng name = "nico";
+  bool alive = true;
+  int age = 12;
+  double money = 69.99;
+  // num 타입은 int, double 둘 다 가능
+  num x = 12;
+  x = 1.1;
 }
